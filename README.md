@@ -1,9 +1,14 @@
 # UniformConf
 
-This is still work in progress. If you have any questions, please open an issue.
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+⚠️ This is still work in progress. If you have any questions, please open an issue. ⚠️
 
 ## Setup
+
+### Configure environment variables
+
+The project is already configured to use a sample Uniform project. Check out the .env file for instructions on how to use your own project instead.
+
+### Install dependencies
 
 Make sure to install the dependencies:
 
