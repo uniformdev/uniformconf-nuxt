@@ -13,7 +13,7 @@ The project is already configured to use a sample Uniform project. Check out the
 Make sure to install the dependencies:
 
 ```bash
-pnpm install --shamefully-hoist
+npm install
 ```
 
 ## Development Server
@@ -21,5 +21,5 @@ pnpm install --shamefully-hoist
 Start the development server on http://localhost:3000
 
 ```bash
-pnpm dev
+npm run dev
 ```
