@@ -1,6 +1,5 @@
 <script lang="ts" setup>
-import { computed } from 'vue';
-import { ComponentInstance } from '@uniformdev/canvas';
+import type { ComponentInstance } from '@uniformdev/canvas';
 
 const props = defineProps<{
   title: string;
@@ -21,13 +20,7 @@ const flexDirection = computed(() =>
       :style="{ flexDirection }"
     >
       <div v-if="image" class="w-1/2">
-        <img
-          :src="image"
-          alt="{title}"
-          width="{400}"
-          height="{400}"
-          class="p-10"
-        />
+        <img :src="image" :alt="title" width="400" height="400" class="p-10" />
       </div>
       <div class="w-1/2">
         <div class="p-10">

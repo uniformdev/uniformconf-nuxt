@@ -1,13 +1,29 @@
 <script lang="ts" setup>
-defineProps({
-  heading: String,
-  registeredText: String,
-  buttonText: String,
-});
+// TODO: Investigate the possibility of using Nuxt's useCookies
+import { parse } from 'cookie';
 
-// TODO: Handle registration
-const onRegister = () => {};
-const registered = false;
+const { context } = useNuxtApp().$useUniformContext();
+
+// TODO: Add component: ComponentInstance as a prop
+defineProps<{
+  heading: string;
+  registeredText: string;
+  buttonText: string;
+}>();
+
+const registered = ref(
+  typeof document !== 'undefined'
+    ? !!document.cookie.match(/unfrmconf_registered/)
+    : false,
+);
+
+const onRegister = () => {
+  document.cookie = 'unfrmconf_registered=true; path=/; samesite=lax';
+  context.update({
+    cookies: parse(document.cookie),
+  });
+  registered.value = true;
+};
 </script>
 
 <template>
@@ -32,12 +48,12 @@ const registered = false;
         <form>
           <div v-if="registered">
             <p class="pb-16">{{ registeredText }}</p>
-            <a
-              href="/"
+            <NuxtLink
+              to="/"
               class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg"
             >
               Return Home
-            </a>
+            </NuxtLink>
           </div>
           <button
             v-else

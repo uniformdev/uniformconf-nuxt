@@ -1,7 +1,6 @@
-import type { Component } from 'vue';
 import {
   DefaultNotImplementedComponent,
-  type ComponentProps,
+  // type ComponentProps,
 } from '@uniformdev/canvas-vue';
 
 import Hero from './Hero.vue';
@@ -12,7 +11,7 @@ import RegisterForm from './RegisterForm.vue';
 import Navbar from './Navbar.vue';
 import Footer from './Footer.vue';
 
-const mapping: ComponentMapping = {
+const mapping = {
   hero: Hero,
   talklist: TalkList,
   talk: Talk,
@@ -22,11 +21,7 @@ const mapping: ComponentMapping = {
   footer: Footer,
 };
 
-type ComponentMapping = Record<string, Component<any>>;
-
-export function resolveRenderer(
-  componentName: string,
-): Component<ComponentProps<any>> | null {
+export function resolveRenderer(componentName: string) {
   return mapping[componentName] ?? DefaultNotImplementedComponent;
 }
 

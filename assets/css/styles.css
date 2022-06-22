@@ -4,8 +4,13 @@
 
 body {
   font-family: sans-serif;
+  @apply leading-normal tracking-normal text-white gradient;
 }
 
 .gradient {
   background: linear-gradient(90deg, #1d3557 0%, #7ad7da 100%);
+}
+
+.thicker-text {
+  -webkit-text-stroke-width: thin;
 }

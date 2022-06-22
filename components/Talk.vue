@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import { ComponentInstance } from '@uniformdev/canvas';
+import type { ComponentInstance } from '@uniformdev/canvas';
 
 defineProps<{
-  title: String;
-  description: String;
-  audience: String;
+  title: string;
+  description: string;
+  audience: string;
   component: ComponentInstance;
 }>();
 </script>
@@ -12,6 +12,7 @@ defineProps<{
 <template>
   <div
     class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow space-y-2 pt-2"
+    :key="audience"
   >
     <div
       class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden"

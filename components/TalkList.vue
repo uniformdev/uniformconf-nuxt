@@ -1,9 +1,8 @@
 <script lang="ts" setup>
-import { SlotContent } from '@uniformdev/canvas-vue';
-import { ComponentInstance } from '@uniformdev/canvas';
+import type { ComponentInstance } from '@uniformdev/canvas';
 
 defineProps<{
-  title: String;
+  title: string;
   component: ComponentInstance;
 }>();
 </script>
@@ -16,7 +15,7 @@ defineProps<{
           class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
           v-text="title"
         />
-        <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-3">
+        <div class="grid grid-cols-1 gap-12 mt-8 px-6 lg:grid-cols-3">
           <SlotContent slotName="talks" />
         </div>
       </div>

@@ -11,7 +11,7 @@
           </NuxtLink>
         </div>
         <p class="text-gray-900 text-right flex-1 leading-8">
-          Uniform starter kit for Next.js © {{ new Date().getFullYear() }}
+          Uniform starter kit for Nuxt.js © {{ new Date().getFullYear() }}
         </p>
       </div>
     </div>
