@@ -8,7 +8,7 @@ import TalkList from './TalkList.vue';
 import WhyAttend from './WhyAttend.vue';
 import Talk from './Talk.vue';
 import RegisterForm from './RegisterForm.vue';
-import Navbar from './Navbar.vue';
+import Navbar from './NavBar.vue';
 import Footer from './Footer.vue';
 
 const mapping = {
