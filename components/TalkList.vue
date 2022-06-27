@@ -15,9 +15,11 @@ defineProps<{
           class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
           v-text="title"
         />
-        <div class="grid grid-cols-1 gap-12 mt-8 px-6 lg:grid-cols-3">
-          <SlotContent slotName="talks" />
-        </div>
+        <SlotContent name="talks" v-slot="{ child, component }">
+          <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+            <component :is="child" v-bind="{ component }" />
+          </div>
+        </SlotContent>
       </div>
     </section>
   </fieldset>

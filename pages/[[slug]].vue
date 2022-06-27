@@ -20,12 +20,12 @@ const pageTitle = computed(() => composition.value?._name);
 
     <Composition
       v-if="composition"
-      :composition="composition"
-      :resolveRenderer="resolveRenderer"
+      :data="composition"
+      :resolve-renderer="resolveRenderer"
     >
-      <SlotContent slotName="header" />
-      <SlotContent slotName="content" />
-      <SlotContent slotName="footer" />
+      <SlotContent name="header" />
+      <SlotContent name="content" />
+      <SlotContent name="footer" />
     </Composition>
     <div v-else-if="pending">Loading...</div>
     <div v-else="error">Couldn't fetch the composition: {{ error }}</div>

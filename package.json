@@ -1,9 +1,14 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
     "dev": "nuxt dev --port 6060",
+    "dev:edge": "OUTPUT_TYPE=edge nuxt dev --port 6060",
+    "build": "nuxt build",
+    "build:edge": "OUTPUT_TYPE=edge nuxt build",
+    "build:cloudflare": "NITRO_PRESET=cloudflare npm run build",
+    "build:cloudflare:edge": "NITRO_PRESET=cloudflare npm run build:edge",
     "generate": "nuxt generate",
+    "generate:edge": "OUTPUT_TYPE=edge nuxt generate",
     "preview": "nuxt preview",
     "context:manifest": "uniform context manifest download --output ./context-manifest.json"
   },

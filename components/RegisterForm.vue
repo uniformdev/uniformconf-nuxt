@@ -1,29 +1,30 @@
 <script lang="ts" setup>
-// TODO: Investigate the possibility of using Nuxt's useCookies
+import type { ComponentInstance } from '@uniformdev/canvas';
 import { parse } from 'cookie';
 
-const { context } = useNuxtApp().$useUniformContext();
-
-// TODO: Add component: ComponentInstance as a prop
 defineProps<{
   heading: string;
   registeredText: string;
   buttonText: string;
+  component: ComponentInstance;
 }>();
 
-const registered = ref(
-  typeof document !== 'undefined'
-    ? !!document.cookie.match(/unfrmconf_registered/)
-    : false,
-);
+const { context } = useNuxtApp().$useUniformContext();
+
+const registered = useCookie<boolean>('unfrmconf_registered', {
+  default: () => false,
+  sameSite: 'lax',
+});
 
 const onRegister = () => {
-  document.cookie = 'unfrmconf_registered=true; path=/; samesite=lax';
+  registered.value = true;
+};
+
+watch(registered, () => {
   context.update({
     cookies: parse(document.cookie),
   });
-  registered.value = true;
-};
+});
 </script>
 
 <template>

@@ -1,7 +1,5 @@
-import {
-  DefaultNotImplementedComponent,
-  // type ComponentProps,
-} from '@uniformdev/canvas-vue';
+import { ComponentInstance } from '@uniformdev/canvas';
+import { DefaultNotImplementedComponent } from '@uniformdev/canvas-vue';
 
 import Hero from './Hero.vue';
 import TalkList from './TalkList.vue';
@@ -21,8 +19,8 @@ const mapping = {
   footer: Footer,
 };
 
-export function resolveRenderer(componentName: string) {
-  return mapping[componentName] ?? DefaultNotImplementedComponent;
+export function resolveRenderer(componentInstance: ComponentInstance) {
+  return mapping[componentInstance.type] ?? DefaultNotImplementedComponent;
 }
 
 export default mapping;
