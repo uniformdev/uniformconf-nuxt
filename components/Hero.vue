@@ -34,7 +34,8 @@ defineProps<{
             v-if="image"
             :key="image"
             class="w-full md:w-4/5 z-50 min-h-500 max-h-500"
-            :height="500"
+            :height="560"
+            :width="560"
             :src="image"
             :alt="buttonText"
           />
