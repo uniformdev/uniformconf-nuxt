@@ -14,18 +14,19 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.1.2",
+    "@types/cookie": "^0.5.1",
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.0.24"
   },
   "dependencies": {
-    "@uniformdev/canvas": "16.0.1-nuxt.149",
-    "@uniformdev/canvas-vue": "16.0.1-nuxt.149",
-    "@uniformdev/cli": "16.0.1-nuxt.149",
-    "@uniformdev/context": "16.0.1-nuxt.149",
-    "@uniformdev/context-vue": "16.0.1-nuxt.149",
-    "@uniformdev/uniform-nuxt": "16.0.1-nuxt.149",
-    "cookie": "^0.5.0",
+    "@uniformdev/canvas": "16.0.1-nuxt.158",
+    "@uniformdev/canvas-vue": "16.0.1-nuxt.158",
+    "@uniformdev/cli": "16.0.1-nuxt.158",
+    "@uniformdev/context": "16.0.1-nuxt.158",
+    "@uniformdev/context-vue": "16.0.1-nuxt.158",
+    "@uniformdev/uniform-nuxt": "16.0.1-nuxt.158",
+    "cookie": "0.5.0",
     "nuxt": "3.0.0-rc.4"
   }
 }

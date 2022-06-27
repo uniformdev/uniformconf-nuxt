@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { ComponentInstance } from '@uniformdev/canvas';
-import { parse } from 'cookie';
+import { parse as parseCookie } from 'cookie';
 
 defineProps<{
   heading: string;
@@ -22,7 +22,7 @@ const onRegister = () => {
 
 watch(registered, () => {
   context.update({
-    cookies: parse(document.cookie),
+    cookies: parseCookie(document.cookie),
   });
 });
 </script>
