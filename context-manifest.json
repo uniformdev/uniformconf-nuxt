@@ -2,13 +2,6 @@
   "project": {
     "pz": {
       "agg": {
-        "techies": {
-          "inputs": [
-            {
-              "dim": "1_dev"
-            }
-          ]
-        },
         "nonTechies": {
           "inputs": [
             {
@@ -22,6 +15,13 @@
               "dim": "callForPapers"
             }
           ]
+        },
+        "techies": {
+          "inputs": [
+            {
+              "dim": "1_dev"
+            }
+          ]
         }
       },
       "enr": {
@@ -30,26 +30,6 @@
         }
       },
       "sig": {
-        "registrationComplete": {
-          "str": 100,
-          "cap": 100,
-          "dur": "p",
-          "crit": {
-            "op": "&",
-            "type": "G",
-            "clauses": [
-              {
-                "type": "CK",
-                "match": {
-                  "cs": false,
-                  "op": "=",
-                  "rhs": "true"
-                },
-                "cookieName": "unfrmconf_registered"
-              }
-            ]
-          }
-        },
         "callForPapers": {
           "str": 50,
           "cap": 100,
@@ -66,6 +46,26 @@
                   "rhs": "unfrmconf"
                 },
                 "queryName": "utm_campaign"
+              }
+            ]
+          }
+        },
+        "registrationComplete": {
+          "str": 100,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "CK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "true"
+                },
+                "cookieName": "unfrmconf_registered"
               }
             ]
           }

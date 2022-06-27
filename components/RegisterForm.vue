@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { ComponentInstance } from '@uniformdev/canvas';
-import { parse as parseCookie } from 'cookie';
+import { parse as parseCookie } from 'cookie-es';
 
 defineProps<{
   heading: string;
