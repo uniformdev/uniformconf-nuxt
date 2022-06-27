@@ -1,6 +1,6 @@
-name = "uniformconf-nuxt-nesi"
+name = "<project_name>"
 type = "javascript"
-account_id = "869c428d239462404477baf845803f06"
+account_id = "<account_id>"
 workers_dev = true
 route = ""
 zone_id = ""
