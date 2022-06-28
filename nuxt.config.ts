@@ -1,5 +1,5 @@
 import { defineNuxtConfig, type NuxtConfig } from 'nuxt';
-import manifestJson from './context-manifest.json';
+import manifestJson from './lib/context/context-manifest.json';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({

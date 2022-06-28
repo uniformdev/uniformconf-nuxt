@@ -10,7 +10,9 @@
     "generate": "nuxt generate",
     "generate:edge": "OUTPUT_TYPE=edge nuxt generate",
     "preview": "nuxt preview",
-    "context:manifest": "uniform context manifest download --output ./context-manifest.json"
+    "context:manifest": "uniform context manifest download --output ./lib/context/context-manifest.json",
+    "copy:edge-netlify": "cpx node_modules/@uniformdev/context-edge-netlify/dist/index.deno.js lib/context",
+    "postinstall": "run-s copy:edge-netlify"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.1.2",
@@ -23,6 +25,8 @@
     "@uniformdev/canvas": "16.0.1-nuxt.159",
     "@uniformdev/canvas-vue": "16.0.1-nuxt.159",
     "@uniformdev/context": "16.0.1-nuxt.159",
+    "@uniformdev/context-edge": "16.0.1-nuxt.159",
+    "@uniformdev/context-edge-netlify": "16.0.1-nuxt.159",
     "@uniformdev/context-vue": "16.0.1-nuxt.159",
     "@uniformdev/uniform-nuxt": "16.0.1-nuxt.159",
     "cookie-es": "^0.5.0",

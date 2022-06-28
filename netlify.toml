@@ -1,0 +1,8 @@
+[build]
+  command = 'npm run generate:edge'
+  publish = 'static'
+
+[[edge_functions]]
+  path = "/*"
+  function = "context-middleware"
+
