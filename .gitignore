@@ -7,3 +7,6 @@ node_modules
 # .env
 dist
 wrangler.toml
+
+# Local Netlify folder
+.netlify

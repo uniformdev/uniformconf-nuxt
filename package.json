@@ -12,12 +12,13 @@
     "preview": "nuxt preview",
     "context:manifest": "uniform context manifest download --output ./lib/context/context-manifest.json",
     "copy:edge-netlify": "cpx node_modules/@uniformdev/context-edge-netlify/dist/index.deno.js lib/context",
-    "postinstall": "run-s copy:edge-netlify"
+    "postinstall": "npm run copy:edge-netlify"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.1.2",
     "@uniformdev/cli": "16.0.1-nuxt.159",
     "autoprefixer": "^10.4.7",
+    "cpx": "^1.5.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.0.24"
   },

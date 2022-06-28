@@ -1,6 +1,6 @@
 [build]
   command = 'npm run generate:edge'
-  publish = 'static'
+  publish = 'dist'
 
 [[edge_functions]]
   path = "/*"
