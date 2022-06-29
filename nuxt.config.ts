@@ -26,7 +26,7 @@ export default defineNuxtConfig({
         manifest: manifestJson,
         projectId: process.env.UNIFORM_PROJECT_ID,
         readOnlyApiKey: process.env.UNIFORM_API_KEY,
-        apiHost: process.env.UNIFORM_CLI_BASE_URL,
+        apiHost: process.env.UNIFORM_API_HOST,
         outputType: process.env.OUTPUT_TYPE,
       },
     ],
