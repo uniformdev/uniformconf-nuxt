@@ -1,19 +1,22 @@
 # UniformConf
 
-⚠️ This is still work in progress. If you have any questions, please open an issue. ⚠️
+This is a sample project to demonstrate some of the features that [Uniform](https://uniform.dev/) offers.
+
+Learn more about Uniform Nuxt module:
+https://www.npmjs.com/package/@uniformdev/uniform-nuxt
 
 ## Setup
 
 ### Configure environment variables
 
-The project is already configured to use a sample Uniform project. Check out the .env file for instructions on how to use your own project instead.
+The project is already configured to use a sample Uniform project. Check out the [.env](./.env) file for instructions on how to use your own project instead.
 
 ### Install dependencies
 
 Make sure to install the dependencies:
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
 ## Development Server
