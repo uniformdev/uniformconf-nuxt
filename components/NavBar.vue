@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import useIsScrolled from '~~/composables/useIsScrolled';
 
-const { context, outputType } = useNuxtApp().$useUniformContext();
+const { context } = useNuxtApp().$useUniformContext();
 
 const submenuVisible = ref(false);
 const onForgetMeClick = async () => {
