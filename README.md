@@ -11,6 +11,15 @@ https://www.npmjs.com/package/@uniformdev/uniform-nuxt
 
 The project is already configured to use a sample Uniform project. Check out the [.env](./.env) file for instructions on how to use your own project instead.
 
+### Set the right Node version
+
+The recommended Node version is specified in `.nvmrc`.
+If you're using NVM, just run:
+
+```
+nvm use
+```
+
 ### Install dependencies
 
 Make sure to install the dependencies:
