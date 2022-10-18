@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { resolveRenderer } from '../components/componentMapping';
+import { useCompositionInstance } from '@uniformdev/canvas-vue';
 
 const route = useRoute();
 
@@ -8,7 +9,9 @@ const { $useComposition } = useNuxtApp();
 
 const { data, pending, error } = await $useComposition({ slug: fullSlug });
 
-const composition = computed(() => data.value?.composition);
+const { composition } = useCompositionInstance({
+  composition: data.value?.composition,
+});
 const pageTitle = computed(() => composition.value?._name);
 </script>
 
