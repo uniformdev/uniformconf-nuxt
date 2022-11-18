@@ -1,8 +1,7 @@
-import { defineNuxtConfig } from 'nuxt';
 import type { ManifestV2 } from '@uniformdev/context';
 import manifestJson from './context-manifest.json';
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: ['~/assets/css/styles.css'],
   modules: ['@uniformdev/uniform-nuxt', '@nuxtjs/tailwindcss'],
