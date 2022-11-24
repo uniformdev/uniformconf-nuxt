@@ -2,8 +2,14 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "matchPackagePrefixes": ["@uniformdev"],
+      "matchPackagePatterns": ["*"],
+      "excludePackagePatterns": ["^@uniformdev"],
+      "enabled": false
+    },
+    {
+      "matchPackagePatterns": ["^@uniformdev"],
       "groupName": "Uniform"
     }
-  ]
+  ],
+  "rangeStrategy": "bump"
 }
