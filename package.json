@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.1.3",
-    "@uniformdev/cli": "17.3.0",
+    "@uniformdev/cli": "17.5.0",
     "nuxt": "3.0.0"
   },
   "dependencies": {
