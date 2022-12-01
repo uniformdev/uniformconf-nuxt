@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   uniform: {
     projectId: process.env.UNIFORM_PROJECT_ID,
     readOnlyApiKey: process.env.UNIFORM_API_KEY,
-    apiHost: process.env.UNIFORM_CLI_BASE_URL || "https://uniform.app",
+    apiHost: process.env.UNIFORM_CLI_BASE_URL || 'https://uniform.app',
     outputType: process.env.OUTPUT_TYPE,
     manifest: manifestJson as ManifestV2,
     defaultConsent: true,

@@ -2,22 +2,16 @@
 import { resolveRenderer } from '../components/componentMapping';
 
 const route = useRoute();
+const slug = `/${route.params.slug ?? ''}`;
 
-const fullSlug = `/${route.params.slug ?? ''}`;
-const { $useComposition } = useNuxtApp();
-
-const { data, pending, error } = await $useComposition({ slug: fullSlug });
-
-const composition = computed(() => data.value?.composition);
-const pageTitle = computed(() => composition.value?._name);
+const { composition, error } = await useUniformComposition({ slug });
 </script>
 
 <template>
   <main>
     <Head>
-      <Title>{{ pageTitle }}</Title>
+      <Title>{{ composition?._name }}</Title>
     </Head>
-
     <Composition
       v-if="composition"
       :data="composition"
@@ -27,7 +21,6 @@ const pageTitle = computed(() => composition.value?._name);
       <SlotContent name="content" />
       <SlotContent name="footer" />
     </Composition>
-    <div v-else-if="pending">Loading...</div>
-    <div v-else="error">Couldn't fetch the composition: {{ error }}</div>
+    <div v-else>Couldn't fetch the composition: {{ error }}</div>
   </main>
 </template>
