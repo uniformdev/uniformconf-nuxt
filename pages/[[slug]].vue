@@ -1,20 +1,28 @@
 <script lang="ts" setup>
+import doEnhance from '~~/lib/uniform';
 import { resolveRenderer } from '../components/componentMapping';
 
 const route = useRoute();
 const slug = `/${route.params.slug ?? ''}`;
 
-const { composition, error } = await useUniformComposition({ slug });
+const { composition: compositionData, error } = await useUniformComposition({
+  slug,
+});
+
+const enhancedComposition = await doEnhance(compositionData.value);
+//console.log(JSON.stringify(enhancedComposition));
+
+
 </script>
 
 <template>
   <main>
     <Head>
-      <Title>{{ composition?._name }}</Title>
+      <Title>{{ enhancedComposition?._name }}</Title>
     </Head>
     <Composition
-      v-if="composition"
-      :data="composition"
+      v-if="enhancedComposition"
+      :data="enhancedComposition"
       :resolve-renderer="resolveRenderer"
     >
       <SlotContent name="header" />

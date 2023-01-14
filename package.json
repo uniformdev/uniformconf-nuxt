@@ -20,10 +20,13 @@
   },
   "dependencies": {
     "@uniformdev/canvas": "17.7.0",
+    "@uniformdev/canvas-aem": "17.1.1-alpha.28",
+    "@uniformdev/canvas-sitecore": "17.1.1-alpha.28",
     "@uniformdev/canvas-vue": "17.7.0",
     "@uniformdev/context": "17.7.0",
     "@uniformdev/context-vue": "17.7.0",
     "@uniformdev/uniform-nuxt": "17.7.0",
-    "cookie-es": "^0.5.0"
+    "cookie-es": "^0.5.0",
+    "nuxt-proxy": "^0.3.12"
   }
 }
