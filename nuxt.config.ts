@@ -24,11 +24,6 @@ export default defineNuxtConfig({
     aemAuthType: process.env.AEM_AUTH_TYPE,
     aemUser: process.env.AEM_USER,
     aemPassword: process.env.AEM_PASSWORD,
-    // public: {
-    //   sitecoreApiUrl: process.env.SITECORE_API_URL,
-    //   sitecoreSiteName: process.env.SITECORE_SITENAME,
-    //   sitecoreApiKey: process.env.SITECORE_API_KEY,
-    // },
   },
   // See options here https://github.com/chimurai/http-proxy-middleware#options
   proxy: {
