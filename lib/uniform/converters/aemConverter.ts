@@ -1,3 +1,6 @@
+const runtimeConfig = useRuntimeConfig();
+const { aemPublishUrl } = runtimeConfig;
+
 export const aemConverter = ({ parameter }: any) => {
   const value = parameter.value;
   if (!value) {
@@ -24,7 +27,7 @@ function transformFragment(fragment: any) {
       };
     }
     return {
-      src: links[0]?.href,
+      src: convertAssetLinkToPublicUrl(links),
     };
   }
 
@@ -35,7 +38,22 @@ function transformFragment(fragment: any) {
 
   const parameters: any = {};
   Object.keys(fragment.elements).forEach((key) => {
-    parameters[key] = fragment.elements[key].value ?? '';
+    let value = fragment.elements[key].value;
+    if (value && value.startsWith('/content/dam')) {
+      value = `${aemPublishUrl}${value}`;
+    }
+    parameters[key] = value ?? '';
   });
   return parameters;
+}
+
+function convertAssetLinkToPublicUrl(assetLinks: Array<{ href: string }>) {
+  if (!assetLinks || assetLinks.length <= 1) {
+    return '';
+  }
+  const authorUrl = assetLinks[0]?.href;
+  return authorUrl
+    .replace('https://author-', 'https://publish-')
+    .replace('api/assets', 'content/dam')
+    .replace('.json', '');
 }

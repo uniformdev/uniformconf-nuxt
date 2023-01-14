@@ -1,0 +1,25 @@
+id: registrationForm
+name: Registration Form
+icon: format-indent-increase
+parameters:
+  - id: heading
+    name: Heading
+    type: text
+    typeConfig:
+      required: true
+  - id: buttonText
+    name: Button Text
+    type: text
+    typeConfig:
+      required: true
+  - id: registeredText
+    name: Registered Text
+    type: text
+    typeConfig:
+      required: true
+useTeamPermissions: true
+slots: []
+titleParameter: heading
+canBeComposition: false
+created: '2023-01-13T22:03:47.297755+00:00'
+updated: '2023-01-13T22:03:47.297755+00:00'

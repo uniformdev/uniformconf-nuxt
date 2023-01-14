@@ -6,6 +6,7 @@ import TalkList from './TalkList.vue';
 import WhyAttend from './WhyAttend.vue';
 import Talk from './Talk.vue';
 import RegisterForm from './RegisterForm.vue';
+import ImageGallery from './ImageGallery.vue';
 import Navbar from './NavBar.vue';
 import Footer from './Footer.vue';
 
@@ -17,6 +18,7 @@ const mapping = {
   registrationForm: RegisterForm,
   header: Navbar,
   footer: Footer,
+  imageGallery: ImageGallery
 };
 
 export function resolveRenderer(componentInstance: ComponentInstance) {

@@ -14,3 +14,19 @@ body {
 .thicker-text {
   -webkit-text-stroke-width: thin;
 }
+
+.content-block ol {
+  padding-top: 0;
+  list-style-type: lower-roman;
+  padding-left: 2rem;
+  line-height: 1.5rem;
+}
+
+.content-block li {
+  line-height: 0.5rem;
+}
+
+.content-block p {
+  padding: 0;
+  line-height: 1.5rem;
+}

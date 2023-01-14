@@ -1,0 +1,30 @@
+id: whyattend
+name: Why Attend
+icon: yinyang
+parameters:
+  - id: content
+    name: Content
+    type: aem-content-fragment-selector
+    helpText: ''
+    typeConfig:
+      required: true
+      displayName: title
+      allowedContentModels:
+        ContentBlockModel:
+          id: ContentBlockModel
+          name: ContentBlockModel
+          fields:
+            strings:
+              - title
+            multiFormatStrings:
+              - text
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-01-13T22:03:47.419344+00:00'
+updated: '2023-01-14T22:16:25.183971+00:00'
+variants:
+  - id: whyattendleft
+    name: WhyAttendLeft
+  - id: whyattendright
+    name: WhyAttendRight

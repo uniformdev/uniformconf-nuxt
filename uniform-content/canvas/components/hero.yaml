@@ -1,0 +1,16 @@
+id: hero
+name: Hero
+icon: components
+parameters:
+  - id: content
+    name: Content
+    type: sitecoreItem
+    helpText: ''
+    typeConfig:
+      allowedTemplate: '{D24D1F2C-DDBE-45F3-A591-2438E10FAD49}'
+      datasourceLocation: '{5C4AC9B2-0432-4BF9-A601-320B4228A1E4}'
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-01-13T22:03:47.049784+00:00'
+updated: '2023-01-13T23:03:42.188986+00:00'

@@ -6,7 +6,6 @@ export function getSitecoreEnhancer() {
   if (!sitecoreApiKey || !sitecoreSiteName || !sitecoreApiUrl) {
     throw 'Sitecore connection details are not configured';
   }
-  console.log("getSitecoreEnhancer")
   return createItemEnhancer({
     pageId: 'id',
     config: {
@@ -17,7 +16,7 @@ export function getSitecoreEnhancer() {
       },
     },
     isPreview: false,
-    logger: console,
+    logger: null,
     modelOnly: false, // enable modelOnly after configuring model builders in Sitecore for all components and parameters
   });
 }

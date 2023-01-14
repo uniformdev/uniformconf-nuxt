@@ -19,6 +19,7 @@ export default defineNuxtConfig({
     sitecoreApiUrl: process.env.SITECORE_API_URL,
     sitecoreSiteName: process.env.SITECORE_SITENAME,
     sitecoreApiKey: process.env.SITECORE_API_KEY,
+    aemPublishUrl: process.env.AEM_PUBLISH_URL,
     aemBaseUrl: process.env.AEM_BASE_URL,
     aemEndpoint: process.env.AEM_ENDPOINT,
     aemAuthType: process.env.AEM_AUTH_TYPE,

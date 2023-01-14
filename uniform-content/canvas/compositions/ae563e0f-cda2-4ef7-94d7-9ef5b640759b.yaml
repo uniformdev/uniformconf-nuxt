@@ -1,0 +1,32 @@
+composition:
+  _name: For Developers
+  _id: ae563e0f-cda2-4ef7-94d7-9ef5b640759b
+  _slug: /developers
+  type: page
+  parameters:
+    $enr:
+      type: $enr
+      value:
+        - cat: '1'
+          key: dev
+          str: 50
+  slots:
+    footer:
+      - _id: 3b98d871-f406-4e48-bdcf-a7f1f12a131c
+        type: footer
+    header:
+      - _id: 14a6dc5c-e6f8-4b79-bf2a-d1bfd3ea00b8
+        type: header
+    content:
+      - _id: f69d8936-31d1-4269-b871-3e39eec4d582
+        type: hero
+        parameters:
+          content:
+            type: sitecoreItem
+            value: '{31E69E4C-A678-4C62-8EB0-3A6AE788225D}'
+          intentTag:
+            type: intentTag
+            value: null
+created: '2023-01-13T22:03:49.141599+00:00'
+modified: '2023-01-14T23:27:12.695108+00:00'
+pattern: false

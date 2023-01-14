@@ -1,0 +1,35 @@
+composition:
+  _name: For Marketers
+  _id: 00bd4d8b-0929-4150-ae56-a22e0fe44c9f
+  _slug: /marketers
+  type: page
+  parameters:
+    $enr:
+      type: $enr
+      value:
+        - cat: '1'
+          key: mkt
+          str: 50
+  slots:
+    footer:
+      - _id: 12f41145-5736-4ab1-a02b-a36e590ff4dc
+        type: footer
+    header:
+      - _id: 8c4e211d-0489-4fa9-99aa-75b052dda327
+        type: header
+    content:
+      - _id: af4291a9-9934-44f7-b92c-9145dd8cb128
+        type: hero
+        parameters:
+          content:
+            type: sitecoreItem
+            value: '{C48F12E3-F3D6-47F2-A3B8-38FECA18B650}'
+          intentTag:
+            type: intentTag
+            value:
+              intents:
+                marketer:
+                  str: 50
+created: '2023-01-13T22:03:48.923458+00:00'
+modified: '2023-01-14T23:27:33.540552+00:00'
+pattern: false

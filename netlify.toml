@@ -1,0 +1,9 @@
+[build]
+  publish = ".output/public"
+  command = "npm run generate"
+
+[[redirects]]
+  from = "/-/media/*"
+  to = "https://res.cloudinary.com/uniformdev/image/fetch/f_auto,c_limit,q_75/https://schabitatdemo.ngrok.io/-/media/:splat"
+  status = 200
+  force = true

@@ -1,0 +1,317 @@
+composition:
+  _name: Home
+  _id: ecf48923-00c6-4d2b-8493-b1e0895d2807
+  _slug: /
+  type: page
+  parameters: {}
+  slots:
+    footer:
+      - _id: 927372f9-7dac-4986-86e9-5cd4dd07cecd
+        type: footer
+    header:
+      - _id: a210047f-7c14-4a2f-85ee-08c92634d2a0
+        type: header
+    content:
+      - _id: a74b9919-07c5-43bf-917a-c3f78ce20468
+        type: $personalization
+        slots:
+          pz:
+            - _id: 17b34fc9-09c9-464f-a63f-58968df9dac7
+              type: hero
+              parameters:
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: registrationComplete
+                        r: 50
+                        op: '>'
+                content:
+                  type: sitecoreItem
+                  value: '{0BA31520-E6F6-4441-B446-E6825E0D8855}'
+                intentTag:
+                  type: intentTag
+                  value: null
+            - _id: 0d12bb57-2255-4588-95e2-c53924544349
+              type: hero
+              parameters:
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: submitCallForPapers
+                        r: 50
+                        op: '>='
+                content:
+                  type: sitecoreItem
+                  value: '{5C63B88F-BDAB-44A4-87EC-A8DE3F4E552C}'
+                intentTag:
+                  type: intentTag
+                  value: null
+            - _id: adae1cc1-c24d-4cb5-8371-b57fbd09e78a
+              type: hero
+              parameters:
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: 1_dev
+                        r: 50
+                        op: '>='
+                content:
+                  type: sitecoreItem
+                  value: '{864016D7-5538-43E6-B355-1CAB17F28EDF}'
+                intentTag:
+                  type: intentTag
+                  value: null
+            - _id: b9e47d7a-a21f-4037-a01c-a57b64106fbb
+              type: hero
+              parameters:
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: 1_mkt
+                        r: 50
+                        op: '>='
+                content:
+                  type: sitecoreItem
+                  value: '{60185572-08E4-46D0-A411-6C0760736AEB}'
+                intentTag:
+                  type: intentTag
+                  value: null
+            - _id: 984b709d-2282-4c87-b04a-5552d27b8568
+              type: hero
+              parameters:
+                content:
+                  type: sitecoreItem
+                  value: '{0D91C1DE-3416-4541-87A5-94E83B7E885B}'
+        parameters:
+          trackingEventName:
+            type: text
+            value: Home Hero
+      - _id: f81aad94-5010-4241-8307-01b1b2c78138
+        type: imageGallery
+        parameters:
+          title:
+            type: text
+            value: Pics from our last year's conference
+          images:
+            type: aem-asset-selector
+            value:
+              assetLinks:
+                - >-
+                  https://author-p89309-e768330.adobeaemcloud.com/api/assets/standard_site/headway-F2KRf_QfCqw-unsplash.jpg.json
+                - >-
+                  https://author-p89309-e768330.adobeaemcloud.com/api/assets/standard_site/teemu-paananen-bzdhc5b3Bxs-unsplash.jpg.json
+                - >-
+                  https://author-p89309-e768330.adobeaemcloud.com/api/assets/standard_site/terren-hurst-blgOFmPIlr0-unsplash.jpg.json
+      - _id: 52407b93-5ea7-4585-9f83-35409b1cc8aa
+        type: $personalization
+        slots:
+          pz:
+            - _id: 8a7e7daf-827b-4bcd-8a8d-2a511acf0a95
+              type: talklist
+              slots:
+                talks:
+                  - _id: 0b614708-e0b8-4f61-972f-033361e8a139
+                    type: talk
+                    parameters:
+                      title:
+                        type: text
+                        value: Jamstack 101
+                      audience:
+                        type: select
+                        value: Marketers
+                      intentTag:
+                        type: intentTag
+                        value: null
+                      description:
+                        type: text
+                        value: >-
+                          Learn what Jamstack is in this introductory course for
+                          both developers and marketers.
+                  - _id: 4b037dd9-996e-478c-a86d-efacdcc430bc
+                    type: talk
+                    parameters:
+                      title:
+                        type: text
+                        value: Personalization the Jamstack way
+                      audience:
+                        type: select
+                        value: Marketers
+                      description:
+                        type: text
+                        value: >-
+                          Marketers can learn about the basics of
+                          personalization and how to do it the Jamstack way.
+                  - _id: a141efde-2a9d-44ab-9f3c-692c6a3b8834
+                    type: talk
+                    parameters:
+                      title:
+                        type: text
+                        value: 3rd party scripts and performance
+                      audience:
+                        type: select
+                        value: Marketers
+                      description:
+                        type: text
+                        value: >-
+                          The effect of 3rd party scripts on performance can be
+                          huge and the additional JavaScript payload coming from
+                          3rd party scripts can easily exceed the amount of
+                          JavaScript you need to render your site.
+              parameters:
+                title:
+                  type: text
+                  value: Personalized talks for marketers
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: nonTechies
+                        op: +
+            - _id: 846727d0-057b-4376-8f04-877f80de50ca
+              type: talklist
+              slots:
+                talks:
+                  - _id: 2ab68b82-039a-434e-9146-7303692758b8
+                    type: talk
+                    parameters:
+                      title:
+                        type: text
+                        value: What's next in Next.js?
+                      audience:
+                        type: select
+                        value: Developers
+                      description:
+                        type: text
+                        value: >-
+                          Find out what's new in the latest Next.js release.
+                          Find out in this content packed session!
+                  - _id: 8b777648-eb3b-4a88-b615-2a75b9ec86ef
+                    type: talk
+                    parameters:
+                      title:
+                        type: text
+                        value: Edge-side computing basics
+                      audience:
+                        type: select
+                        value: Developers
+                      description:
+                        type: text
+                        value: >-
+                          Learn how to take the static to the new realm by
+                          adding edge-side logic to your application.
+                  - _id: acb26166-cbfb-4667-bf0f-522f46b30e60
+                    type: talk
+                    parameters:
+                      title:
+                        type: text
+                        value: Personalization the for developers
+                      audience:
+                        type: select
+                        value: Developers
+                      description:
+                        type: text
+                        value: >-
+                          Developers should know the basics of personalization
+                          and how to do it the Jamstack way.
+              parameters:
+                title:
+                  type: text
+                  value: Personalized talks for developers
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: techies
+                        op: +
+            - _id: 998510aa-d8dd-458c-b3e7-6a15c8bf0f3e
+              type: talklist
+              slots:
+                talks:
+                  - _id: 0b6c93d3-db91-4cb2-985d-e78f63e45743
+                    type: talk
+                    parameters:
+                      title:
+                        type: text
+                        value: What's next in Next.js?
+                      audience:
+                        type: select
+                        value: Developers
+                      description:
+                        type: text
+                        value: >-
+                          Find out what's new in the latest Next.js release.
+                          Find out in this content packed session!
+                  - _id: dfdff962-bed1-49e6-8dca-52d02cea1331
+                    type: talk
+                    parameters:
+                      title:
+                        type: text
+                        value: Personalization the Jamstack way
+                      audience:
+                        type: select
+                        value: Marketers
+                      description:
+                        type: text
+                        value: >-
+                          Marketers can learn about the basics of
+                          personalization and how to do it the Jamstack way.
+                  - _id: 5602030c-c20a-44b4-923a-53314c818285
+                    type: talk
+                    parameters:
+                      title:
+                        type: text
+                        value: Personalization the for developers
+                      audience:
+                        type: select
+                        value: Developers
+                      description:
+                        type: text
+                        value: >-
+                          Developers should know the basics of personalization
+                          and how to do it the Jamstack way.
+              parameters:
+                title:
+                  type: text
+                  value: Our conference talks for everyone
+                $pzCrit:
+                  type: $pzCrit
+                  value: null
+        parameters:
+          trackingEventName:
+            type: text
+            value: Home page talks
+      - _id: 10c310f7-daee-4235-b74c-41547aeef0d7
+        type: $test
+        slots:
+          test:
+            - _id: 9bc921fe-2d3e-4e75-85e0-4492f083c92a
+              type: whyattend
+              variant: whyattendright
+              parameters:
+                content:
+                  type: aem-content-fragment-selector
+                  value:
+                    contentFragments:
+                      - path: /content/dam/projects/masters/first/why-attend
+                        model: ContentBlockModel
+            - _id: 83e807a5-1e6b-4e4d-a2bf-20081a572bd7
+              type: whyattend
+              variant: whyattendleft
+              parameters:
+                content:
+                  type: aem-content-fragment-selector
+                  value:
+                    contentFragments:
+                      - path: /content/dam/projects/masters/first/why-attend
+                        model: ContentBlockModel
+        parameters:
+          test:
+            type: testSelect
+            value: whyAttendTest
+created: '2023-01-13T22:03:49.171574+00:00'
+modified: '2023-01-14T23:12:00.841778+00:00'
+pattern: false

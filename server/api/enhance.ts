@@ -13,7 +13,7 @@ const noopEnhancer = () => {
 export default defineEventHandler(async (event: H3Event) => {
   const body = await readBody(event);
   const composition = body.composition;
-  console.log({ composition });
+
   await enhance({
     composition,
     enhancers: new EnhancerBuilder()

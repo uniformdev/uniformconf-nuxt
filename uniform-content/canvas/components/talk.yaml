@@ -1,0 +1,32 @@
+id: talk
+name: Talk
+icon: add-r
+parameters:
+  - id: title
+    name: Title
+    type: text
+    typeConfig:
+      required: true
+  - id: description
+    name: Description
+    type: text
+    typeConfig:
+      required: true
+      multiline: true
+      linesCount: '10'
+  - id: audience
+    name: Audience
+    type: select
+    typeConfig:
+      options:
+        - text: developers
+          value: Developers
+        - text: marketers
+          value: Marketers
+      required: true
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-01-13T22:03:47.286254+00:00'
+updated: '2023-01-13T22:03:47.286254+00:00'
