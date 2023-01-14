@@ -37,12 +37,12 @@ defineProps<{
         </div>
         <div class="w-full md:w-3/5 py-6 text-center">
           <img
-            v-if="content.image.url"
-            :key="content.image.url"
+            v-if="content.image?.url"
+            :key="content.image?.url"
             class="w-full md:w-4/5 z-50 min-h-500 max-h-500"
             :height="560"
             :width="560"
-            :src="content.image.url"
+            :src="content.image?.url"
             :alt="content.buttonText"
           />
         </div>
