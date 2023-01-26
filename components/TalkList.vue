@@ -15,11 +15,11 @@ defineProps<{
           class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
           v-text="title"
         />
-        <SlotContent name="talks" v-slot="{ child, component }">
+        <UniformSlot name="talks" v-slot="{ child, component }">
           <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
             <component :is="child" v-bind="{ component }" />
           </div>
-        </SlotContent>
+        </UniformSlot>
       </div>
     </section>
   </fieldset>

@@ -12,15 +12,15 @@ const { composition, error } = await useUniformComposition({ slug });
     <Head>
       <Title>{{ composition?._name }}</Title>
     </Head>
-    <Composition
+    <UniformComposition
       v-if="composition"
       :data="composition"
       :resolve-renderer="resolveRenderer"
     >
-      <SlotContent name="header" />
-      <SlotContent name="content" />
-      <SlotContent name="footer" />
-    </Composition>
+      <UniformSlot name="header" />
+      <UniformSlot name="content" />
+      <UniformSlot name="footer" />
+    </UniformComposition>
     <div v-else>Couldn't fetch the composition: {{ error }}</div>
   </main>
 </template>
