@@ -1,0 +1,1146 @@
+{
+  "components": [
+    {
+      "id": "footer",
+      "name": "Footer",
+      "icon": "border-bottom",
+      "parameters": [],
+      "useTeamPermissions": true,
+      "slots": [],
+      "canBeComposition": false,
+      "created": "2023-02-16T15:12:05.511356+00:00",
+      "updated": "2023-02-16T15:12:05.511356+00:00"
+    },
+    {
+      "id": "header",
+      "name": "Header",
+      "icon": "border-top",
+      "parameters": [],
+      "useTeamPermissions": true,
+      "slots": [],
+      "canBeComposition": false,
+      "created": "2023-02-16T15:12:05.470419+00:00",
+      "updated": "2023-02-16T15:12:05.470419+00:00"
+    },
+    {
+      "id": "hero",
+      "name": "Hero",
+      "icon": "components",
+      "parameters": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "text",
+          "typeConfig": {
+            "required": true
+          }
+        },
+        {
+          "id": "text",
+          "name": "Text",
+          "type": "text",
+          "typeConfig": {
+            "regex": "",
+            "multiline": true,
+            "linesCount": "10"
+          }
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "text",
+          "typeConfig": null
+        },
+        {
+          "id": "buttonText",
+          "name": "Button Text",
+          "type": "text",
+          "typeConfig": {
+            "required": false
+          }
+        },
+        {
+          "id": "buttonLink",
+          "name": "Button Link",
+          "type": "text",
+          "typeConfig": null
+        }
+      ],
+      "useTeamPermissions": true,
+      "slots": [],
+      "titleParameter": "title",
+      "canBeComposition": false,
+      "created": "2023-02-16T15:12:05.222506+00:00",
+      "updated": "2023-02-16T15:12:05.222506+00:00"
+    },
+    {
+      "id": "page",
+      "name": "Page",
+      "icon": "file-document",
+      "parameters": [],
+      "useTeamPermissions": true,
+      "slots": [
+        {
+          "id": "header",
+          "name": "Header",
+          "allowedComponents": [
+            "header"
+          ],
+          "inheritAllowedComponents": false
+        },
+        {
+          "id": "content",
+          "name": "content",
+          "allowedComponents": [
+            "$test",
+            "hero",
+            "$personalization",
+            "registrationForm",
+            "talklist",
+            "whyattend"
+          ],
+          "inheritAllowedComponents": false
+        },
+        {
+          "id": "footer",
+          "name": "Footer",
+          "allowedComponents": [
+            "footer"
+          ],
+          "inheritAllowedComponents": false
+        }
+      ],
+      "defaults": {
+        "type": "page",
+        "slots": {
+          "footer": [
+            {
+              "type": "footer",
+              "parameters": {}
+            }
+          ],
+          "header": [
+            {
+              "type": "header",
+              "parameters": {}
+            }
+          ]
+        }
+      },
+      "slugSettings": {
+        "unique": "global",
+        "required": "yes",
+        "regularExpression": "",
+        "regularExpressionMessage": ""
+      },
+      "canBeComposition": true,
+      "created": "2023-02-16T15:12:06.768178+00:00",
+      "updated": "2023-02-16T15:12:06.768178+00:00"
+    },
+    {
+      "id": "registrationForm",
+      "name": "Registration Form",
+      "icon": "format-indent-increase",
+      "parameters": [
+        {
+          "id": "heading",
+          "name": "Heading",
+          "type": "text",
+          "typeConfig": {
+            "required": true
+          }
+        },
+        {
+          "id": "buttonText",
+          "name": "Button Text",
+          "type": "text",
+          "typeConfig": {
+            "required": true
+          }
+        },
+        {
+          "id": "registeredText",
+          "name": "Registered Text",
+          "type": "text",
+          "typeConfig": {
+            "required": true
+          }
+        }
+      ],
+      "useTeamPermissions": true,
+      "slots": [],
+      "titleParameter": "heading",
+      "canBeComposition": false,
+      "created": "2023-02-16T15:12:05.484933+00:00",
+      "updated": "2023-02-16T15:12:05.484933+00:00"
+    },
+    {
+      "id": "talk",
+      "name": "Talk",
+      "icon": "add-r",
+      "parameters": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "text",
+          "typeConfig": {
+            "required": true
+          }
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "text",
+          "typeConfig": {
+            "required": true,
+            "multiline": true,
+            "linesCount": "10"
+          }
+        },
+        {
+          "id": "audience",
+          "name": "Audience",
+          "type": "select",
+          "typeConfig": {
+            "options": [
+              {
+                "text": "developers",
+                "value": "Developers"
+              },
+              {
+                "text": "marketers",
+                "value": "Marketers"
+              }
+            ],
+            "required": true
+          }
+        }
+      ],
+      "useTeamPermissions": true,
+      "slots": [],
+      "titleParameter": "title",
+      "canBeComposition": false,
+      "created": "2023-02-16T15:12:05.996076+00:00",
+      "updated": "2023-02-16T15:12:05.996076+00:00"
+    },
+    {
+      "id": "talklist",
+      "name": "Talklist",
+      "icon": "mic",
+      "parameters": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "text",
+          "typeConfig": null
+        }
+      ],
+      "useTeamPermissions": true,
+      "slots": [
+        {
+          "id": "talks",
+          "name": "talks",
+          "minComponents": 1,
+          "allowedComponents": [
+            "$personalization",
+            "talk"
+          ],
+          "inheritAllowedComponents": false
+        }
+      ],
+      "titleParameter": "title",
+      "canBeComposition": false,
+      "created": "2023-02-16T15:12:05.897168+00:00",
+      "updated": "2023-02-16T15:12:05.897168+00:00"
+    },
+    {
+      "id": "whyattend",
+      "name": "Why Attend",
+      "icon": "yinyang",
+      "parameters": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "text",
+          "typeConfig": {
+            "required": true
+          }
+        },
+        {
+          "id": "text",
+          "name": "Text",
+          "type": "text",
+          "typeConfig": {
+            "multiline": true,
+            "linesCount": "10"
+          }
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "text",
+          "typeConfig": null
+        }
+      ],
+      "useTeamPermissions": true,
+      "slots": [],
+      "canBeComposition": false,
+      "created": "2023-02-16T15:12:05.508909+00:00",
+      "updated": "2023-02-16T15:12:05.508909+00:00",
+      "variants": [
+        {
+          "id": "whyattendleft",
+          "name": "WhyAttendLeft"
+        },
+        {
+          "id": "whyattendright",
+          "name": "WhyAttendRight"
+        }
+      ]
+    }
+  ],
+  "compositions": [
+    {
+      "composition": {
+        "_name": "For Marketers",
+        "_id": "00bd4d8b-0929-4150-ae56-a22e0fe44c9f",
+        "_slug": "/marketers",
+        "type": "page",
+        "parameters": {
+          "$enr": {
+            "type": "$enr",
+            "value": [
+              {
+                "cat": "1",
+                "key": "mkt",
+                "str": 50
+              }
+            ]
+          }
+        },
+        "slots": {
+          "footer": [
+            {
+              "type": "footer",
+              "parameters": {}
+            }
+          ],
+          "header": [
+            {
+              "type": "header",
+              "parameters": {}
+            }
+          ],
+          "content": [
+            {
+              "type": "hero",
+              "parameters": {
+                "text": {
+                  "type": "text",
+                  "value": "This page is tagged with marketer enrichment, meaning score 50 for marketer enrichment was added to the current visitor profile. You should be seeing more marketer content now."
+                },
+                "title": {
+                  "type": "text",
+                  "value": "Alrighty, you are more of a marketer now! ☑️"
+                },
+                "intentTag": {
+                  "type": "intentTag",
+                  "value": {
+                    "intents": {
+                      "marketer": {
+                        "str": 50
+                      }
+                    }
+                  }
+                },
+                "buttonLink": {
+                  "type": "text",
+                  "value": "/"
+                },
+                "buttonText": {
+                  "type": "text",
+                  "value": "Go Home"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "created": "2023-02-16T15:12:07.191777+00:00",
+      "modified": "2023-02-16T15:12:07.191777+00:00",
+      "pattern": false
+    },
+    {
+      "composition": {
+        "_name": "Registration",
+        "_id": "39a1d122-950b-4a1c-b245-ba0deb2c4a0d",
+        "_slug": "/registration",
+        "type": "page",
+        "parameters": {},
+        "slots": {
+          "footer": [
+            {
+              "type": "footer",
+              "parameters": {}
+            }
+          ],
+          "header": [
+            {
+              "type": "header",
+              "parameters": {}
+            }
+          ],
+          "content": [
+            {
+              "type": "registrationForm",
+              "parameters": {
+                "heading": {
+                  "type": "text",
+                  "value": "Register Now!"
+                },
+                "buttonText": {
+                  "type": "text",
+                  "value": "Complete Registration"
+                },
+                "registeredText": {
+                  "type": "text",
+                  "value": "Thanks for registering for UniformConf! We'll see you there!"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "created": "2023-02-16T15:12:07.838531+00:00",
+      "modified": "2023-02-16T15:12:07.838531+00:00",
+      "pattern": false
+    },
+    {
+      "composition": {
+        "_name": "For Developers",
+        "_id": "ae563e0f-cda2-4ef7-94d7-9ef5b640759b",
+        "_slug": "/developers",
+        "type": "page",
+        "parameters": {
+          "$enr": {
+            "type": "$enr",
+            "value": [
+              {
+                "cat": "1",
+                "key": "dev",
+                "str": 50
+              }
+            ]
+          }
+        },
+        "slots": {
+          "footer": [
+            {
+              "type": "footer",
+              "parameters": {}
+            }
+          ],
+          "header": [
+            {
+              "type": "header",
+              "parameters": {}
+            }
+          ],
+          "content": [
+            {
+              "type": "hero",
+              "parameters": {
+                "text": {
+                  "type": "text",
+                  "value": "This page is tagged with developer enrichment, meaning score 50 for developer enrichment was added to the current visitor profile. You should be seeing more developer content now."
+                },
+                "title": {
+                  "type": "text",
+                  "value": "Ok, you are more of a developer now ✅"
+                },
+                "intentTag": {
+                  "type": "intentTag",
+                  "value": null
+                },
+                "buttonLink": {
+                  "type": "text",
+                  "value": "/"
+                },
+                "buttonText": {
+                  "type": "text",
+                  "value": "Go Home"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "created": "2023-02-16T15:12:07.185909+00:00",
+      "modified": "2023-02-16T15:12:07.185909+00:00",
+      "pattern": false
+    },
+    {
+      "composition": {
+        "_name": "Home",
+        "_id": "ecf48923-00c6-4d2b-8493-b1e0895d2807",
+        "_slug": "/",
+        "type": "page",
+        "parameters": {},
+        "slots": {
+          "footer": [
+            {
+              "type": "footer",
+              "parameters": {}
+            }
+          ],
+          "header": [
+            {
+              "type": "header",
+              "parameters": {}
+            }
+          ],
+          "content": [
+            {
+              "type": "$personalization",
+              "slots": {
+                "pz": [
+                  {
+                    "type": "hero",
+                    "parameters": {
+                      "text": {
+                        "type": "text",
+                        "value": "Now check out the conference sessions and add them to your agenda"
+                      },
+                      "image": {
+                        "type": "text",
+                        "value": "/images/registration-hero.svg"
+                      },
+                      "title": {
+                        "type": "text",
+                        "value": "Thank you for joining!"
+                      },
+                      "$pzCrit": {
+                        "type": "$pzCrit",
+                        "value": {
+                          "crit": [
+                            {
+                              "l": "registrationComplete",
+                              "r": 50,
+                              "op": ">"
+                            }
+                          ]
+                        }
+                      },
+                      "intentTag": {
+                        "type": "intentTag",
+                        "value": null
+                      },
+                      "buttonText": {
+                        "type": "text",
+                        "value": "See sessions"
+                      }
+                    }
+                  },
+                  {
+                    "type": "hero",
+                    "parameters": {
+                      "text": {
+                        "type": "text",
+                        "value": "We can't wait to receive your talk submission!"
+                      },
+                      "image": {
+                        "type": "text",
+                        "value": "/images/call-for-papers-hero.svg"
+                      },
+                      "title": {
+                        "type": "text",
+                        "value": "Call for papers open now!"
+                      },
+                      "$pzCrit": {
+                        "type": "$pzCrit",
+                        "value": {
+                          "crit": [
+                            {
+                              "l": "submitCallForPapers",
+                              "r": 50,
+                              "op": ">="
+                            }
+                          ]
+                        }
+                      },
+                      "intentTag": {
+                        "type": "intentTag",
+                        "value": null
+                      },
+                      "buttonText": {
+                        "type": "text",
+                        "value": "Submit your talk"
+                      }
+                    }
+                  },
+                  {
+                    "type": "hero",
+                    "parameters": {
+                      "text": {
+                        "type": "text",
+                        "value": "We think you might be interested in this content."
+                      },
+                      "image": {
+                        "type": "text",
+                        "value": "/images/developer-hero.svg"
+                      },
+                      "title": {
+                        "type": "text",
+                        "value": "Hey, developer!"
+                      },
+                      "$pzCrit": {
+                        "type": "$pzCrit",
+                        "value": {
+                          "crit": [
+                            {
+                              "l": "1_dev",
+                              "r": 50,
+                              "op": ">="
+                            }
+                          ]
+                        }
+                      },
+                      "intentTag": {
+                        "type": "intentTag",
+                        "value": null
+                      },
+                      "buttonText": {
+                        "type": "text",
+                        "value": null
+                      }
+                    }
+                  },
+                  {
+                    "type": "hero",
+                    "parameters": {
+                      "text": {
+                        "type": "text",
+                        "value": "We think you may be a marketer. This might be of interest to you!"
+                      },
+                      "image": {
+                        "type": "text",
+                        "value": "/images/marketer-hero.svg"
+                      },
+                      "title": {
+                        "type": "text",
+                        "value": "Howdy, Marketer!"
+                      },
+                      "$pzCrit": {
+                        "type": "$pzCrit",
+                        "value": {
+                          "crit": [
+                            {
+                              "l": "1_mkt",
+                              "r": 50,
+                              "op": ">="
+                            }
+                          ]
+                        }
+                      },
+                      "intentTag": {
+                        "type": "intentTag",
+                        "value": null
+                      }
+                    }
+                  },
+                  {
+                    "type": "hero",
+                    "parameters": {
+                      "text": {
+                        "type": "text",
+                        "value": "Whether you are a developer or a marketer, we got great content for you."
+                      },
+                      "image": {
+                        "type": "text",
+                        "value": "/images/default-hero.svg"
+                      },
+                      "title": {
+                        "type": "text",
+                        "value": "Welcome to UniformConf"
+                      },
+                      "buttonLink": {
+                        "type": "text",
+                        "value": "/registration"
+                      },
+                      "buttonText": {
+                        "type": "text",
+                        "value": "Register"
+                      }
+                    }
+                  }
+                ]
+              },
+              "parameters": {
+                "trackingEventName": {
+                  "type": "text",
+                  "value": "Home Hero"
+                }
+              }
+            },
+            {
+              "type": "$personalization",
+              "slots": {
+                "pz": [
+                  {
+                    "type": "talklist",
+                    "slots": {
+                      "talks": [
+                        {
+                          "type": "talk",
+                          "parameters": {
+                            "title": {
+                              "type": "text",
+                              "value": "Jamstack 101"
+                            },
+                            "audience": {
+                              "type": "select",
+                              "value": "Marketers"
+                            },
+                            "intentTag": {
+                              "type": "intentTag",
+                              "value": null
+                            },
+                            "description": {
+                              "type": "text",
+                              "value": "Learn what Jamstack is in this introductory course for both developers and marketers."
+                            }
+                          }
+                        },
+                        {
+                          "type": "talk",
+                          "parameters": {
+                            "title": {
+                              "type": "text",
+                              "value": "Personalization the Jamstack way"
+                            },
+                            "audience": {
+                              "type": "select",
+                              "value": "Marketers"
+                            },
+                            "description": {
+                              "type": "text",
+                              "value": "Marketers can learn about the basics of personalization and how to do it the Jamstack way."
+                            }
+                          }
+                        },
+                        {
+                          "type": "talk",
+                          "parameters": {
+                            "title": {
+                              "type": "text",
+                              "value": "3rd party scripts and performance"
+                            },
+                            "audience": {
+                              "type": "select",
+                              "value": "Marketers"
+                            },
+                            "description": {
+                              "type": "text",
+                              "value": "The effect of 3rd party scripts on performance can be huge and the additional JavaScript payload coming from 3rd party scripts can easily exceed the amount of JavaScript you need to render your site."
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "parameters": {
+                      "title": {
+                        "type": "text",
+                        "value": "Personalized talks for marketers"
+                      },
+                      "$pzCrit": {
+                        "type": "$pzCrit",
+                        "value": {
+                          "crit": [
+                            {
+                              "l": "nonTechies",
+                              "op": "+"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "talklist",
+                    "slots": {
+                      "talks": [
+                        {
+                          "type": "talk",
+                          "parameters": {
+                            "title": {
+                              "type": "text",
+                              "value": "What's next in Next.js?"
+                            },
+                            "audience": {
+                              "type": "select",
+                              "value": "Developers"
+                            },
+                            "description": {
+                              "type": "text",
+                              "value": "Find out what's new in the latest Next.js release. Find out in this content packed session!"
+                            }
+                          }
+                        },
+                        {
+                          "type": "talk",
+                          "parameters": {
+                            "title": {
+                              "type": "text",
+                              "value": "Edge-side computing basics"
+                            },
+                            "audience": {
+                              "type": "select",
+                              "value": "Developers"
+                            },
+                            "description": {
+                              "type": "text",
+                              "value": "Learn how to take the static to the new realm by adding edge-side logic to your application."
+                            }
+                          }
+                        },
+                        {
+                          "type": "talk",
+                          "parameters": {
+                            "title": {
+                              "type": "text",
+                              "value": "Personalization the for developers"
+                            },
+                            "audience": {
+                              "type": "select",
+                              "value": "Developers"
+                            },
+                            "description": {
+                              "type": "text",
+                              "value": "Developers should know the basics of personalization and how to do it the Jamstack way."
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "parameters": {
+                      "title": {
+                        "type": "text",
+                        "value": "Personalized talks for developers"
+                      },
+                      "$pzCrit": {
+                        "type": "$pzCrit",
+                        "value": {
+                          "crit": [
+                            {
+                              "l": "techies",
+                              "op": "+"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "talklist",
+                    "slots": {
+                      "talks": [
+                        {
+                          "type": "talk",
+                          "parameters": {
+                            "title": {
+                              "type": "text",
+                              "value": "What's next in Next.js?"
+                            },
+                            "audience": {
+                              "type": "select",
+                              "value": "Developers"
+                            },
+                            "description": {
+                              "type": "text",
+                              "value": "Find out what's new in the latest Next.js release. Find out in this content packed session!"
+                            }
+                          }
+                        },
+                        {
+                          "type": "talk",
+                          "parameters": {
+                            "title": {
+                              "type": "text",
+                              "value": "Personalization the Jamstack way"
+                            },
+                            "audience": {
+                              "type": "select",
+                              "value": "Marketers"
+                            },
+                            "description": {
+                              "type": "text",
+                              "value": "Marketers can learn about the basics of personalization and how to do it the Jamstack way."
+                            }
+                          }
+                        },
+                        {
+                          "type": "talk",
+                          "parameters": {
+                            "title": {
+                              "type": "text",
+                              "value": "Personalization the for developers"
+                            },
+                            "audience": {
+                              "type": "select",
+                              "value": "Developers"
+                            },
+                            "description": {
+                              "type": "text",
+                              "value": "Developers should know the basics of personalization and how to do it the Jamstack way."
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "parameters": {
+                      "title": {
+                        "type": "text",
+                        "value": "Our conference talks for everyone"
+                      },
+                      "$pzCrit": {
+                        "type": "$pzCrit",
+                        "value": null
+                      }
+                    }
+                  }
+                ]
+              },
+              "parameters": {
+                "trackingEventName": {
+                  "type": "text",
+                  "value": "Home page talks"
+                }
+              }
+            },
+            {
+              "type": "$test",
+              "slots": {
+                "test": [
+                  {
+                    "type": "whyattend",
+                    "variant": "whyattendright",
+                    "parameters": {
+                      "text": {
+                        "type": "text",
+                        "value": "This conference has something to offer developers and marketers alike. From basics to advanced, learn more about:\n\n1. Enterprise JAMstack Personalization\n2. Uniform Personalization\n3. Uniform DXP\n\nExpand your knowledge on these subjects and engage with professionals from all over the world."
+                      },
+                      "image": {
+                        "type": "text",
+                        "value": "/images/crowd.jpg"
+                      },
+                      "title": {
+                        "type": "text",
+                        "value": "Why You Should Attend"
+                      }
+                    }
+                  },
+                  {
+                    "type": "whyattend",
+                    "variant": "whyattendleft",
+                    "parameters": {
+                      "text": {
+                        "type": "text",
+                        "value": "This conference has something to offer developers and marketers alike. From basics to advanced, learn more about:\n\n1. Enterprise JAMstack Personalization\n2. Uniform Personalization\n3. Uniform DXP\n\nExpand your knowledge on these subjects and engage with professionals from all over the world."
+                      },
+                      "image": {
+                        "type": "text",
+                        "value": "/images/crowd.jpg"
+                      },
+                      "title": {
+                        "type": "text",
+                        "value": "Why You Should Attend"
+                      }
+                    }
+                  }
+                ]
+              },
+              "parameters": {
+                "test": {
+                  "type": "testSelect",
+                  "value": "whyAttendTest"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "created": "2023-02-16T15:12:07.542544+00:00",
+      "modified": "2023-02-16T15:12:07.542544+00:00",
+      "pattern": false
+    }
+  ],
+  "signals": [
+    {
+      "id": "callForPapers",
+      "name": "Call for papers",
+      "cap": 100,
+      "crit": {
+        "op": "&",
+        "type": "G",
+        "clauses": [
+          {
+            "type": "QS",
+            "match": {
+              "cs": false,
+              "op": "=",
+              "rhs": "unfrmconf"
+            },
+            "queryName": "utm_campaign"
+          }
+        ]
+      },
+      "dur": "p",
+      "description": "",
+      "str": 50
+    },
+    {
+      "id": "registrationComplete",
+      "name": "Registration complete",
+      "cap": 100,
+      "crit": {
+        "op": "&",
+        "type": "G",
+        "clauses": [
+          {
+            "type": "CK",
+            "match": {
+              "cs": false,
+              "op": "=",
+              "rhs": "true"
+            },
+            "cookieName": "unfrmconf_registered"
+          }
+        ]
+      },
+      "dur": "p",
+      "description": "",
+      "str": 100
+    }
+  ],
+  "enrichments": [
+    {
+      "id": "1",
+      "name": "Profile",
+      "cap": 100,
+      "values": [
+        {
+          "id": "dev",
+          "value": "Developer"
+        },
+        {
+          "id": "mkt",
+          "value": "Marketer"
+        }
+      ]
+    }
+  ],
+  "quirks": [
+    {
+      "id": "cdpAudience",
+      "name": "CDP Audience",
+      "description": ""
+    }
+  ],
+  "tests": [
+    {
+      "id": "whyAttendTest",
+      "name": "Why Attend Test"
+    }
+  ],
+  "aggregates": [
+    {
+      "id": "nonTechies",
+      "name": "Non-techies",
+      "description": "",
+      "type": 0,
+      "inputs": [
+        {
+          "dim": "1_mkt",
+          "sign": "+"
+        }
+      ]
+    },
+    {
+      "id": "submitCallForPapers",
+      "name": "Submit call for papers",
+      "description": "",
+      "type": 1,
+      "inputs": [
+        {
+          "dim": "callForPapers",
+          "sign": "+"
+        }
+      ]
+    },
+    {
+      "id": "techies",
+      "name": "Techies",
+      "description": "",
+      "type": 0,
+      "inputs": [
+        {
+          "dim": "1_dev",
+          "sign": "+"
+        }
+      ]
+    }
+  ],
+  "projectMaps": [
+    {
+      "id": "75b7df37-080e-4ecc-913f-ba16392ed8eb",
+      "name": "Marketing Site (Starter)'s Project Map",
+      "default": true
+    }
+  ],
+  "projectMapNodes": [
+    {
+      "id": "44a64561-14d4-4815-8630-8b713baa5223",
+      "name": "Home",
+      "type": "composition",
+      "data": {},
+      "order": 500,
+      "path": "/",
+      "compositionId": "ecf48923-00c6-4d2b-8493-b1e0895d2807",
+      "pathSegment": "",
+      "projectMapId": "75b7df37-080e-4ecc-913f-ba16392ed8eb"
+    },
+    {
+      "id": "d028c084-835a-49dc-bcc8-b6508b65fd3e",
+      "name": "Registration",
+      "type": "composition",
+      "data": {},
+      "order": 500,
+      "path": "/registration",
+      "compositionId": "39a1d122-950b-4a1c-b245-ba0deb2c4a0d",
+      "pathSegment": "registration",
+      "projectMapId": "75b7df37-080e-4ecc-913f-ba16392ed8eb"
+    },
+    {
+      "id": "d5b1be16-f4f7-429a-b189-b1720b6076fe",
+      "name": "For Marketers",
+      "type": "composition",
+      "data": {},
+      "order": 500,
+      "path": "/marketers",
+      "compositionId": "00bd4d8b-0929-4150-ae56-a22e0fe44c9f",
+      "pathSegment": "marketers",
+      "projectMapId": "75b7df37-080e-4ecc-913f-ba16392ed8eb"
+    },
+    {
+      "id": "f7d1d463-8286-44d9-ba58-6be65cf9d8aa",
+      "name": "For Developers",
+      "type": "composition",
+      "data": {},
+      "order": 500,
+      "path": "/developers",
+      "compositionId": "ae563e0f-cda2-4ef7-94d7-9ef5b640759b",
+      "pathSegment": "developers",
+      "projectMapId": "75b7df37-080e-4ecc-913f-ba16392ed8eb"
+    }
+  ]
+}
