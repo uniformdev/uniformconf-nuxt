@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     readOnlyApiKey: process.env.UNIFORM_API_KEY,
     apiHost: process.env.UNIFORM_CLI_BASE_URL,
     edgeApiHost: process.env.UNIFORM_CLI_BASE_EDGE_URL,
-    outputType: process.env.OUTPUT_TYPE,
+    outputType: process.env.OUTPUT_TYPE || 'standard',
     manifest: manifestJson as ManifestV2,
     defaultConsent: true,
     // If you prefer to have full control over your Uniform Context instance:
