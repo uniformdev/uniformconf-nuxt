@@ -40,8 +40,8 @@
     "uniform:push:project-map": "run-s uniform:push:project-map:definitions uniform:push:project-map:nodes"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "6.10.4",
-    "@uniformdev/cli": "19.94.0",
+    "@nuxtjs/tailwindcss": "6.6.7",
+    "@uniformdev/cli": "19.96.0",
     "npm-run-all": "^4.1.5",
     "nuxt": "3.9.1",
     "p-limit": "^5.0.0",
@@ -50,11 +50,11 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@uniformdev/canvas": "19.94.0",
-    "@uniformdev/canvas-vue": "19.94.0",
-    "@uniformdev/context": "19.94.0",
-    "@uniformdev/context-vue": "19.94.0",
-    "@uniformdev/uniform-nuxt": "19.94.0",
-    "cookie-es": "^1.0.0"
+    "@uniformdev/canvas": "19.96.0",
+    "@uniformdev/canvas-vue": "19.96.0",
+    "@uniformdev/context": "19.96.0",
+    "@uniformdev/context-vue": "19.96.0",
+    "@uniformdev/uniform-nuxt": "19.96.0",
+    "cookie-es": "^0.5.0"
   }
 }
