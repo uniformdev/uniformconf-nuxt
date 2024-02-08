@@ -33,7 +33,7 @@ nvm use
 Make sure to install the dependencies:
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
 ## Development Server
