@@ -9,7 +9,15 @@ https://www.npmjs.com/package/@uniformdev/uniform-nuxt
 
 ### Configure environment variables
 
-The project is already configured to use a sample Uniform project. Check out the [.env](./.env) file for instructions on how to use your own project instead.
+The project is already configured to use a sample Uniform project. Check out the [.env.example](./.env.example) file for instructions on how to use your own project instead.
+
+### Setup Uniform Preview URL for Visual Editing
+
+Make sure to [set the preview URL in the Uniform Canvas Settings](https://docs.uniform.app/docs/guides/composition/visual-editing/preview-mode#configure-the-preview-url-for-the-project) to the value for Nuxt.
+
+```
+http://localhost:3000/?preview=true
+```
 
 ### Set the right Node version
 
