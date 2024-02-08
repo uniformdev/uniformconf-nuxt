@@ -33,7 +33,7 @@ nvm use
 Make sure to install the dependencies:
 
 ```bash
-pnpm install
+npm install
 ```
 
 ## Development Server
@@ -41,5 +41,5 @@ pnpm install
 Start the development server on http://localhost:3000
 
 ```bash
-pnpm dev
+npm run dev
 ```
