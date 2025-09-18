@@ -1,0 +1,417 @@
+composition:
+  _name: Home
+  _id: ecf48923-00c6-4d2b-8493-b1e0895d2807
+  _slug: /
+  type: page
+  slots:
+    footer:
+      - _id: 624dd1f8-73c9-4962-90ee-89d9b01865b4
+        type: footer
+    header:
+      - _id: 0b07d7a4-d80a-4f30-bed9-02bb7b92a1f7
+        type: header
+    content:
+      - _id: 2bad7c43-dabc-432c-8a95-2f5614b51397
+        type: $personalization
+        slots:
+          pz:
+            - _id: c1775e92-7e03-4f0b-b96d-25ac10f4860c
+              type: hero
+              parameters:
+                text:
+                  type: text
+                  value: >-
+                    Now check out the conference sessions and add them to your
+                    agenda
+                image:
+                  type: asset
+                  value:
+                    - _id: 78aac305-b1ad-4c03-9730-cb90fdbf0d53
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: a5c113cf-33ab-4f93-95e5-5ac6aa4cfbb7
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/rD7cIYsAS-q4c3tV2jO26A/6P8Q31mMS3ag7CQ5WK-zoA-registration-hero.svg
+                          type: text
+                        file:
+                          type: file
+                          value: 36318d30-511f-4b13-a772-b8ee2d0e65f7
+                        size:
+                          value: 8721
+                          type: number
+                        title:
+                          type: text
+                          value: registration-hero.svg
+                        width:
+                          value: 560
+                          type: number
+                        height:
+                          value: 560
+                          type: number
+                        mediaType:
+                          value: image/svg+xml
+                          type: text
+                      _source: uniform-assets
+                title:
+                  type: text
+                  value: Thank you for joining!
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    dim: registrationComplete
+                    name: registered
+                intentTag:
+                  type: intentTag
+                  value: null
+                buttonText:
+                  type: text
+                  value: See sessions
+            - _id: f54f95c9-85ef-4df8-a678-63c6c6064950
+              type: hero
+              parameters:
+                text:
+                  type: text
+                  value: We can't wait to receive your talk submission!
+                image:
+                  type: asset
+                  value:
+                    - _id: a6f45b3d-140e-48be-99dd-0df964ddc348
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: a1f7204e-11c0-4894-a5dc-4a3e18270473
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/rD7cIYsAS-q4c3tV2jO26A/ca7zCndITo2B_fcKb7E8Cg-call-for-papers-hero.svg
+                          type: text
+                        file:
+                          type: file
+                          value: e880e8b5-164d-47b9-acf9-4654db1a111d
+                        size:
+                          value: 9703
+                          type: number
+                        title:
+                          type: text
+                          value: call-for-papers-hero.svg
+                        width:
+                          value: 560
+                          type: number
+                        height:
+                          value: 560
+                          type: number
+                        mediaType:
+                          value: image/svg+xml
+                          type: text
+                      _source: uniform-assets
+                title:
+                  type: text
+                  value: Call for papers open now!
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    dim: callForPapers
+                    name: call-for-papers
+                intentTag:
+                  type: intentTag
+                  value: null
+                buttonText:
+                  type: text
+                  value: Submit your talk
+            - _id: 5ac7e150-69e6-41ce-a8ae-36589febad56
+              type: hero
+              parameters:
+                text:
+                  type: text
+                  value: We think you might be interested in this content.
+                image:
+                  type: asset
+                  value:
+                    - _id: 7d591d9f-f2f4-42ec-a344-c3a1d0fccfc0
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: ada1e32d-feb1-49af-a26c-b187936798db
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/rD7cIYsAS-q4c3tV2jO26A/lWRdFNGBQQa3D7KquUe5Fg-developer-hero.svg
+                          type: text
+                        file:
+                          type: file
+                          value: eada35b6-3f14-48bb-993d-cfa9c99ec6c9
+                        size:
+                          value: 2440
+                          type: number
+                        title:
+                          type: text
+                          value: developer-hero.svg
+                        width:
+                          value: 560
+                          type: number
+                        height:
+                          value: 560
+                          type: number
+                        mediaType:
+                          value: image/svg+xml
+                          type: text
+                      _source: uniform-assets
+                title:
+                  type: text
+                  value: Hey, developer!
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    dim: 1_dev
+                    name: developers
+                intentTag:
+                  type: intentTag
+                  value: null
+                buttonText:
+                  type: text
+                  value: null
+            - _id: f14b0cd4-d8ce-4a22-aa1b-d55796740850
+              type: hero
+              parameters:
+                text:
+                  type: text
+                  value: >-
+                    We think you may be a marketer. This might be of interest to
+                    you!
+                image:
+                  type: asset
+                  value:
+                    - _id: d02319df-5312-40d9-ab6a-062420dbee85
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 442dcb58-dc9c-41f5-afdf-d3c3b30283ac
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/rD7cIYsAS-q4c3tV2jO26A/1MmMDcR2QteHHYLpiVyCWg-marketer-hero.svg
+                          type: text
+                        file:
+                          type: file
+                          value: b115f9a8-a0b6-4826-b08f-7f6e6c79d3db
+                        size:
+                          value: 7021
+                          type: number
+                        title:
+                          type: text
+                          value: marketer-hero.svg
+                        width:
+                          value: 560
+                          type: number
+                        height:
+                          value: 560
+                          type: number
+                        mediaType:
+                          value: image/svg+xml
+                          type: text
+                      _source: uniform-assets
+                title:
+                  type: text
+                  value: Howdy, Marketer!
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    dim: 1_mkt
+                    name: marketers
+                intentTag:
+                  type: intentTag
+                  value: null
+            - _id: 4410422b-6690-469e-948e-de035e28e5eb
+              type: hero
+              parameters:
+                text:
+                  type: text
+                  value: >-
+                    Whether you are a developer or a marketer, we got great
+                    content for you.
+                image:
+                  type: asset
+                  value:
+                    - _id: 3492a464-3877-4020-8269-594482436e4d
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 27baec86-560a-4f87-8253-5f617ed8a8c6
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/rD7cIYsAS-q4c3tV2jO26A/1WlL5haFToKkLjFMYwKicw-default-hero.svg
+                          type: text
+                        file:
+                          type: file
+                          value: 4a148cd8-23f7-4d43-9b2f-9f0b434305a0
+                        size:
+                          value: 8789
+                          type: number
+                        title:
+                          type: text
+                          value: default-hero.svg
+                        width:
+                          value: 561
+                          type: number
+                        height:
+                          value: 560
+                          type: number
+                        mediaType:
+                          value: image/svg+xml
+                          type: text
+                      _source: uniform-assets
+                title:
+                  type: text
+                  value: Welcome to UniformConf
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    name: default
+                buttonLink:
+                  type: text
+                  value: /registration
+                buttonText:
+                  type: text
+                  value: Register
+        parameters:
+          algorithm:
+            type: pzAlgorithm
+            value: ssc
+          trackingEventName:
+            type: text
+            value: Home Hero
+      - _id: c8261d6f-3205-425c-9163-574f4355f187
+        type: $test
+        slots:
+          test:
+            - _id: a3eac857-ecb1-4875-af36-ddfe7fa8096a
+              type: whyattend
+              parameters:
+                text:
+                  type: text
+                  value: >-
+                    Unlock the next level of your development skills at this
+                    conference, designed with developers in mind. Dive deep
+                    into:
+
+
+                    1. Latest front-end tech goodness
+
+                    2. Meet your tech heroes
+
+
+                    Connect with leading engineers, discover the latest tools
+                    and frameworks, and gain practical insights you can apply
+                    immediately. Whether you're looking to master new
+                    technologies or network with fellow developers from around
+                    the globe, this event is your gateway to innovation and
+                    growth.
+                image:
+                  type: asset
+                  value:
+                    - _id: 5b93c5e0-2818-41ae-a6b4-3b8285170705
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 3bd6d7c8-c4d0-4104-9a7f-6030e215cfdf
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/rD7cIYsAS-q4c3tV2jO26A/cGsU-5p4Se2C7UTE5g0pqw-image.png
+                          type: text
+                        file:
+                          type: file
+                          value: dab9432d-5dfd-419e-b9f4-8b211026b525
+                        size:
+                          value: 2790612
+                          type: number
+                        title:
+                          type: text
+                          value: Developer Sitting
+                        width:
+                          value: 1740
+                          type: number
+                        height:
+                          value: 1160
+                          type: number
+                        mediaType:
+                          value: image/png
+                          type: text
+                      _source: uniform-assets
+                title:
+                  type: text
+                  value: Why it is must attend event
+                $tstVrnt:
+                  type: testVariant
+                  value:
+                    id: Variant
+            - _id: cd8d86a9-3714-4d4c-83c1-22669513b1c5
+              type: whyattend
+              variant: whyattendleft
+              parameters:
+                text:
+                  type: text
+                  value: >-
+                    This conference has something to offer developers and
+                    marketers alike. From basics to advanced, learn more about:
+
+
+                    1. Enterprise JAMstack Personalization
+
+                    2. Uniform Personalization
+
+                    3. Uniform DXP
+
+
+                    Expand your knowledge on these subjects and engage with
+                    professionals from all over the world.
+                image:
+                  type: asset
+                  value:
+                    - _id: 4a16d6f3-d153-4e81-92d8-0c976659582b
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: f77f27cc-e55d-43ec-bf0e-81bc013558d1
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/rD7cIYsAS-q4c3tV2jO26A/0dlyjZxMQMaRNOZ7Gk0gGA-image.png
+                          type: text
+                        file:
+                          type: file
+                          value: be4b06f8-4fc9-4755-8715-78c2e0478966
+                        size:
+                          value: 1419275
+                          type: number
+                        title:
+                          type: text
+                          value: Crowd Conference
+                        width:
+                          value: 1740
+                          type: number
+                        height:
+                          value: 1160
+                          type: number
+                        mediaType:
+                          value: image/png
+                          type: text
+                      _source: uniform-assets
+                title:
+                  type: text
+                  value: Why You Should Attend
+                $tstVrnt:
+                  type: testVariant
+                  value:
+                    id: Control
+        parameters:
+          test:
+            type: testSelect
+            value: whyAttendTest
+created: '2023-02-16T15:12:07.542544+00:00'
+modified: '2025-09-18T19:18:49.257976+00:00'
+pattern: false

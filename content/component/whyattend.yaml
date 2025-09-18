@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: whyattend
+name: Why Attend
+icon: yinyang
+parameters:
+  - id: title
+    name: Title
+    type: text
+    typeConfig:
+      required: true
+  - id: text
+    name: Text
+    type: text
+    typeConfig:
+      multiline: true
+      linesCount: '10'
+  - id: image
+    name: Image
+    type: asset
+    typeConfig:
+      max: 1
+      allowedTypes:
+        - image
+    localizable: true
+useTeamPermissions: true
+slots: []
+titleParameter: title
+thumbnailParameter: image
+canBeComposition: false
+created: '2023-02-16T15:12:05.508909+00:00'
+updated: '2025-09-18T19:18:43.476583+00:00'
+variants:
+  - id: whyattendleft
+    name: Image Left
+  - id: whyattendright
+    name: Image Right

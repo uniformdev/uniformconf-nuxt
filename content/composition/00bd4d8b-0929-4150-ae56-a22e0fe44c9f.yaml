@@ -1,0 +1,49 @@
+composition:
+  _name: For Marketers
+  _id: 00bd4d8b-0929-4150-ae56-a22e0fe44c9f
+  _slug: /marketers
+  type: page
+  parameters:
+    $enr:
+      type: $enr
+      value:
+        - cat: '1'
+          key: mkt
+          str: 50
+  slots:
+    footer:
+      - _id: 8431cff1-1ea6-4014-bcad-8c4f5be8b314
+        type: footer
+        parameters: {}
+    header:
+      - _id: ffb5e195-0662-41df-ab9c-23fee2a2ac2c
+        type: header
+        parameters: {}
+    content:
+      - _id: 86fb2e41-1649-455f-b604-0f7aeacdcb32
+        type: hero
+        parameters:
+          text:
+            type: text
+            value: >-
+              This page is tagged with marketer enrichment, meaning score 50 for
+              marketer enrichment was added to the current visitor profile. You
+              should be seeing more marketer content now.
+          title:
+            type: text
+            value: Alrighty, you are more of a marketer now! ☑️
+          intentTag:
+            type: intentTag
+            value:
+              intents:
+                marketer:
+                  str: 50
+          buttonLink:
+            type: text
+            value: /
+          buttonText:
+            type: text
+            value: Go Home
+created: '2023-02-16T15:12:07.191777+00:00'
+modified: '2025-09-18T19:18:48.488177+00:00'
+pattern: false

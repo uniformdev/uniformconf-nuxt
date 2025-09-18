@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: a5c113cf-33ab-4f93-95e5-5ac6aa4cfbb7
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: registration-hero.svg
+    file:
+      type: file
+      value: 36318d30-511f-4b13-a772-b8ee2d0e65f7
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/rD7cIYsAS-q4c3tV2jO26A/6P8Q31mMS3ag7CQ5WK-zoA-registration-hero.svg
+      type: text
+    size:
+      value: 8721
+      type: number
+    width:
+      value: 560
+      type: number
+    height:
+      value: 560
+      type: number
+    custom: {}
+created: '2025-09-18T19:18:38.097133+00:00'
+modified: '2025-09-18T19:18:38.097133+00:00'

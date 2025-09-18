@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: a1f7204e-11c0-4894-a5dc-4a3e18270473
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: call-for-papers-hero.svg
+    file:
+      type: file
+      value: e880e8b5-164d-47b9-acf9-4654db1a111d
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/rD7cIYsAS-q4c3tV2jO26A/ca7zCndITo2B_fcKb7E8Cg-call-for-papers-hero.svg
+      type: text
+    size:
+      value: 9703
+      type: number
+    width:
+      value: 560
+      type: number
+    height:
+      value: 560
+      type: number
+    custom: {}
+created: '2025-09-18T19:18:36.857079+00:00'
+modified: '2025-09-18T19:18:36.857079+00:00'

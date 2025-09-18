@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: talklist
+name: Talklist
+icon: mic
+parameters:
+  - id: title
+    name: Title
+    type: text
+    typeConfig: null
+useTeamPermissions: true
+slots:
+  - id: talks
+    name: talks
+    minComponents: 1
+    allowedComponents:
+      - $personalization
+      - talk
+    inheritAllowedComponents: false
+titleParameter: title
+canBeComposition: false
+created: '2023-02-16T15:12:05.897168+00:00'
+updated: '2025-09-18T19:18:43.071081+00:00'

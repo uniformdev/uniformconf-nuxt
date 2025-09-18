@@ -1,0 +1,46 @@
+composition:
+  _name: For Developers
+  _id: ae563e0f-cda2-4ef7-94d7-9ef5b640759b
+  _slug: /developers
+  type: page
+  parameters:
+    $enr:
+      type: $enr
+      value:
+        - cat: '1'
+          key: dev
+          str: 50
+  slots:
+    footer:
+      - _id: ca8d74ca-be97-4167-be87-738a89ec9600
+        type: footer
+        parameters: {}
+    header:
+      - _id: 9ab82010-df53-4916-83dd-c7605ceaaa11
+        type: header
+        parameters: {}
+    content:
+      - _id: 4cb43674-fc40-4e56-8598-7d6350b69dc8
+        type: hero
+        parameters:
+          text:
+            type: text
+            value: >-
+              This page is tagged with developer enrichment, meaning score 50
+              for developer enrichment was added to the current visitor profile.
+              You should be seeing more developer content now.
+          title:
+            type: text
+            value: Ok, you are more of a developer now ✅
+          intentTag:
+            type: intentTag
+            value: null
+          buttonLink:
+            type: text
+            value: /
+          buttonText:
+            type: text
+            value: Go Home
+created: '2023-02-16T15:12:07.185909+00:00'
+modified: '2025-09-18T19:18:47.84926+00:00'
+pattern: false

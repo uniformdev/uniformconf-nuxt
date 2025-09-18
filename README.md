@@ -19,21 +19,12 @@ Make sure to [set the preview URL in the Uniform Canvas Settings](https://docs.u
 http://localhost:3000/?preview=true
 ```
 
-### Set the right Node version
-
-The recommended Node version is specified in `.nvmrc`.
-If you're using NVM, just run:
-
-```
-nvm use
-```
-
 ### Install dependencies
 
 Make sure to install the dependencies:
 
 ```bash
-npm install --legacy-peer-deps
+npm install
 ```
 
 ## Development Server
@@ -43,3 +34,9 @@ Start the development server on http://localhost:3000
 ```bash
 npm run dev
 ```
+
+## Setting up your own local project
+
+If you want to work on your own project, start with an empty Uniform project, then create an API key with Developer role in Uniform and update `UNIFORM_API_KEY` in your `.env` file, then run `npm run uniform:push` to push content from `./content` folder to your project.
+
+To sync changes from your Uniform project to source control, use `npm run uniform:pull` command.

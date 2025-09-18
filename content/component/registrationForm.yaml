@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: registrationForm
+name: Registration Form
+icon: format-indent-increase
+parameters:
+  - id: heading
+    name: Heading
+    type: text
+    typeConfig:
+      required: true
+  - id: buttonText
+    name: Button Text
+    type: text
+    typeConfig:
+      required: true
+  - id: registeredText
+    name: Registered Text
+    type: text
+    typeConfig:
+      required: true
+useTeamPermissions: true
+slots: []
+titleParameter: heading
+canBeComposition: false
+created: '2023-02-16T15:12:05.484933+00:00'
+updated: '2025-09-18T19:18:42.536781+00:00'

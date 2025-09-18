@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 3bd6d7c8-c4d0-4104-9a7f-6030e215cfdf
+  _name: image.png
+  fields:
+    title:
+      type: text
+      value: Developer Sitting
+    file:
+      type: file
+      value: dab9432d-5dfd-419e-b9f4-8b211026b525
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/rD7cIYsAS-q4c3tV2jO26A/cGsU-5p4Se2C7UTE5g0pqw-image.png
+      type: text
+    size:
+      value: 2790612
+      type: number
+    width:
+      value: 1740
+      type: number
+    height:
+      value: 1160
+      type: number
+    custom: {}
+created: '2025-02-11T03:39:15.570188+00:00'
+modified: '2025-09-18T19:18:34.535456+00:00'

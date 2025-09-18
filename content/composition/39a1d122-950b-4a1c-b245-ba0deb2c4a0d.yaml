@@ -1,0 +1,31 @@
+composition:
+  _name: Registration
+  _id: 39a1d122-950b-4a1c-b245-ba0deb2c4a0d
+  _slug: /registration
+  type: page
+  parameters: {}
+  slots:
+    footer:
+      - _id: 604ad6f9-d8f6-48d2-b540-d640a2fcd23f
+        type: footer
+        parameters: {}
+    header:
+      - _id: 320a0add-4b25-4ddb-9bd2-18b22a580a86
+        type: header
+        parameters: {}
+    content:
+      - _id: 2e693206-44e2-4526-b9b3-81d5d648191e
+        type: registrationForm
+        parameters:
+          heading:
+            type: text
+            value: Register Now!
+          buttonText:
+            type: text
+            value: Complete Registration
+          registeredText:
+            type: text
+            value: Thanks for registering for UniformConf! We'll see you there!
+created: '2023-02-16T15:12:07.838531+00:00'
+modified: '2025-09-18T19:18:49.747414+00:00'
+pattern: false

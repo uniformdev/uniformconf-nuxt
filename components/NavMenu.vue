@@ -15,12 +15,7 @@ const navMenuItems = [
   {
     label: 'Registration',
     href: '/registration',
-  },
-  {
-    label: 'Campaign',
-    href: '/?utm_campaign=unfrmconf',
-    isRedirect: true,
-  },
+  }
 ];
 </script>
 <template>
@@ -31,7 +26,6 @@ const navMenuItems = [
       <NuxtLink
         :to="navMenuItem.href"
         class="inline-block py-2 px-4 text-black no-underline hover:text-underline"
-        :active-class="!navMenuItem.isRedirect ? 'thicker-text' : ''"
       >
         {{ navMenuItem.label }}
       </NuxtLink>

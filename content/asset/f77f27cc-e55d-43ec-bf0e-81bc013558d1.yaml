@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: f77f27cc-e55d-43ec-bf0e-81bc013558d1
+  _name: image.png
+  fields:
+    title:
+      type: text
+      value: Crowd Conference
+    file:
+      type: file
+      value: be4b06f8-4fc9-4755-8715-78c2e0478966
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/rD7cIYsAS-q4c3tV2jO26A/0dlyjZxMQMaRNOZ7Gk0gGA-image.png
+      type: text
+    size:
+      value: 1419275
+      type: number
+    width:
+      value: 1740
+      type: number
+    height:
+      value: 1160
+      type: number
+    custom: {}
+created: '2025-02-11T03:38:10.320427+00:00'
+modified: '2025-09-18T19:18:32.492365+00:00'

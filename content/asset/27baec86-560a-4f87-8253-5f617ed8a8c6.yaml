@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 27baec86-560a-4f87-8253-5f617ed8a8c6
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: default-hero.svg
+    file:
+      type: file
+      value: 4a148cd8-23f7-4d43-9b2f-9f0b434305a0
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/rD7cIYsAS-q4c3tV2jO26A/1WlL5haFToKkLjFMYwKicw-default-hero.svg
+      type: text
+    size:
+      value: 8789
+      type: number
+    width:
+      value: 561
+      type: number
+    height:
+      value: 560
+      type: number
+    custom: {}
+created: '2025-09-18T19:18:36.232286+00:00'
+modified: '2025-09-18T19:18:36.232286+00:00'

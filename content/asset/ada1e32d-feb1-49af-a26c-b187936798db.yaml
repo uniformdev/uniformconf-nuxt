@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: ada1e32d-feb1-49af-a26c-b187936798db
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: developer-hero.svg
+    file:
+      type: file
+      value: eada35b6-3f14-48bb-993d-cfa9c99ec6c9
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/rD7cIYsAS-q4c3tV2jO26A/lWRdFNGBQQa3D7KquUe5Fg-developer-hero.svg
+      type: text
+    size:
+      value: 2440
+      type: number
+    width:
+      value: 560
+      type: number
+    height:
+      value: 560
+      type: number
+    custom: {}
+created: '2025-09-18T19:18:36.113893+00:00'
+modified: '2025-09-18T19:18:36.113893+00:00'

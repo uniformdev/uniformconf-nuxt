@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 442dcb58-dc9c-41f5-afdf-d3c3b30283ac
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: marketer-hero.svg
+    file:
+      type: file
+      value: b115f9a8-a0b6-4826-b08f-7f6e6c79d3db
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/rD7cIYsAS-q4c3tV2jO26A/1MmMDcR2QteHHYLpiVyCWg-marketer-hero.svg
+      type: text
+    size:
+      value: 7021
+      type: number
+    width:
+      value: 560
+      type: number
+    height:
+      value: 560
+      type: number
+    custom: {}
+created: '2025-09-18T19:18:36.667763+00:00'
+modified: '2025-09-18T19:18:36.667763+00:00'

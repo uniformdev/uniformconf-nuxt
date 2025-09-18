@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: talk
+name: Talk
+icon: add-r
+parameters:
+  - id: title
+    name: Title
+    type: text
+    typeConfig:
+      required: true
+  - id: description
+    name: Description
+    type: text
+    typeConfig:
+      required: true
+      multiline: true
+      linesCount: '10'
+  - id: audience
+    name: Audience
+    type: select
+    typeConfig:
+      options:
+        - text: developers
+          value: Developers
+        - text: marketers
+          value: Marketers
+      required: true
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-02-16T15:12:05.996076+00:00'
+updated: '2025-09-18T19:18:42.733485+00:00'

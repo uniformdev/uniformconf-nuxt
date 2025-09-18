@@ -1,4 +1,4 @@
-import { ComponentInstance } from '@uniformdev/canvas';
+import { type ComponentInstance } from '@uniformdev/canvas';
 import { DefaultNotImplementedComponent } from '@uniformdev/canvas-vue';
 
 import Hero from './Hero.vue';

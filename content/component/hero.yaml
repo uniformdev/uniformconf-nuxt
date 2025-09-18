@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: hero
+name: Hero
+icon: components
+parameters:
+  - id: title
+    name: Title
+    type: text
+    typeConfig:
+      required: true
+  - id: text
+    name: Text
+    type: text
+    typeConfig:
+      regex: ''
+      multiline: true
+      linesCount: '10'
+  - id: image
+    name: Image
+    type: asset
+    typeConfig:
+      max: 1
+      required: true
+      allowedTypes:
+        - image
+  - id: buttonText
+    name: Button Text
+    type: text
+    typeConfig:
+      required: false
+  - id: buttonLink
+    name: Button Link
+    type: text
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: title
+thumbnailParameter: image
+canBeComposition: false
+created: '2023-02-16T15:12:05.222506+00:00'
+updated: '2025-09-18T19:18:41.898592+00:00'
